@@ -77,3 +77,44 @@ Com base no exemplo acima, analise as afirmações abaixo e marque as verdadeira
 - __Podemos formar uma frase com o seguinte código: console.log(palavras[0],palavras[3],palavras[1],palavras[2])__
 
 > Certo! O resultado da execução do código acima nos mostraria um resultado no console escrito: Dia de programar javascript.
+
+## Aula 4
+
+1 - Uma pessoa resolveu incluir o placar no seu jogo e criou o seguinte código:
+
+``` javascript
+function marcaPonto(){
+  if (yAtor < 15){
+    meusPontos += 1;
+    voltaAtorParaPosicaoInicial();
+  }
+}
+```
+
+Ao executar o jogo e chegar do outro lado, a pessoa não marcou nenhum ponto. Não encontrando o erro, decidiu compartilhar seu arquivo sketch.js, conforme ilustra o código abaixo:
+
+``` javascript
+function setup() {
+  createCanvas(500, 400);
+}
+
+function draw() {
+  background(imagemDaEstrada);
+  mostraAtor();
+  mostraCarro();
+  movimentaCarro();
+  movimentaAtor();
+  voltaPosicaoInicialDoCarro();
+  verificaColisao();
+  incluiPontos();
+}
+```
+
+Analisando os códigos acima, por que a pessoa não está conseguindo marcar pontos quando consegue atravessar a rua e chegar do outro lado?
+
+- Porque após atribuir o pontos na variável meusPontos, estamos executando outra função, no caso: voltaAtorParaPosicaoInicial().
+- __Porque a função marcaPonto() não está sendo executada.__
+
+> Certo! Para conseguir pontuar, é necessário executar função marcaPonto(), dentro da função draw().
+
+- Porque o código yAtor < 15 deveria ser yAtor > 15.
