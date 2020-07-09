@@ -118,3 +118,32 @@ Analisando os códigos acima, por que a pessoa não está conseguindo marcar pon
 > Certo! Para conseguir pontuar, é necessário executar função marcaPonto(), dentro da função draw().
 
 - Porque o código yAtor < 15 deveria ser yAtor > 15.
+
+## Aula 5
+
+1 - Para melhorar a leitura e compreensão do código, alteramos o nomes de algumas funções como colidiu para voltaAtorPosicaoInicial() e criamos a função pontosMaiorQueZero(), conforme as imagens abaixo:
+
+``` javascript
+function voltaAtorParaPosicaoInicial(){
+  yAtor = 366;
+}
+
+function pontosMaiorQueZero(){
+  return meusPontos > 0;
+}
+```
+
+Analisando as funções acima, podemos afirmar que:
+
+- O retorno da função voltaAtorPosicaoInicial() será o valor 366.
+- __Para criar uma função que retorna um valor em Javascript, usamos a palavra return, seguida pelo valor que queremos retornar.__
+
+> Certo! Indicamos o retorno de uma função com a palavra return em Javascript.
+
+- __Uma função em Javascript pode ter um retorno ou não.__
+
+> Certo! Na função voltaAtorPosicaoInicial(), alteramos a variável yAtor e não retornamos nada, diferente da função pontosMaiorQueZero().
+
+- __O retorno da função pontosMaiorQueZero() será true ou false.__
+
+> Certo! Essa função pode retornar 2 valores: true, caso meus pontos sejam maiores que 0, ou false, caso contrário.
